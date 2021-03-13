@@ -1,0 +1,20 @@
+.header {
+  background-color: #416651;
+  height: 160px;
+  padding: 50px 60px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.line {
+  height: 3px;
+  background-color: #a3ffcc;
+}
+
+sub {
+  color: #a3ffcc;
+}
