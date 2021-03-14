@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<img width="412" alt="Zrzut ekranu 2021-03-14 o 16 19 55" src="https://user-images.githubusercontent.com/35819136/111074187-25684d80-84e2-11eb-8914-280da6722bc5.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ElGamal Algorithm
+ElGamal algorithm implementation with simple frontend application created in React.js framework.
 
-## Available Scripts
+## Technologies
+Technology | Description
+------------ | -------------
+[React.js](https://pl.reactjs.org/) | JavaScript framework for creating Single Page Applications
+[Auth0](https://auth0.com/) | User's authentication tool
+[Docker](https://www.docker.com/) | Automatic application deployment software
+[Font Awesome](https://fontawesome.com/) | Icons
+[React Loading](https://www.npmjs.com/package/react-loading) | npm package with loading spinners
 
-In the project directory, you can run:
+## Installation
 
-### `yarn start`
+### Node
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Install [Node.js](https://nodejs.org/en/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If the installation was successful, you should be able to run the following commands in your terminal:
+```
+$ node --version
+v15.8.0
 
-### `yarn test`
+$ npm --version
+7.6.2
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Docker
 
-### `yarn build`
+Install [Docker](https://www.docker.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the project directory:
+```
+$ docker build . -t elgamal-algorithm
+$ docker run --rm -it -p 3000:3000 elgamal-algorithm
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the project
+In the project directory:
+```
+$ npm install
+$ npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Application will run automatically in your browser at http://localhost:3000/
