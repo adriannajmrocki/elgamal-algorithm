@@ -1,12 +1,32 @@
 .msg {
   margin-top: 40px;
+}
+
+.msg input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #416651;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  outline: none;
+}
+
+.msg input::placeholder {
+  color: #fff;
+}
+
+.cipher {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.left-ta,
-.right-ta {
+textarea {
   border: none;
   border-radius: 8px;
   padding: 15px 20px;
@@ -18,16 +38,9 @@
   outline: none;
 }
 
-.left-ta::placeholder {
-  color: #fff;
+textarea::placeholder {
+  color: #a3ffcc;
   font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 3px;
-}
-
-.right-ta::placeholder {
-  color: #333;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 3px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
 }

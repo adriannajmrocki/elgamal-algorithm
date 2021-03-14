@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
+
 import { ElGamal } from '../../utils/ElGamal';
 
 import './MessageInput.css';
@@ -19,38 +20,36 @@ const MessageInput = ({ alphabet }) => {
   msgInput = encryption.encrypt(msgInput, decryption.pubKey);
 
   const encryptedMsg = msgInput;
-  //const decryptedMsg = decryption.decrypt(msgInput);
+  const decryptedMsg = decryption.decrypt(msgInput);
 
-  return (  
-    <div className="msg">
-      <textarea 
-        className="left-ta"
-        rows="8"
-        cols="70"
-        type="text"
-        placeholder="Enter the message..."
-        onChange={handleChange}
-      />
-      {!message ? (
-        <textarea
-          className="right-ta"
-          rows="8"
-          cols="70"
+  return ( 
+    <Fragment>
+      <div className="msg">
+        <input 
           type="text"
-          placeholder="Your encoded message"
-          disabled
+          placeholder="Enter the message..."
+          onChange={handleChange}
         />
-      ) : (
-        <textarea
-          className="right-ta"
+      </div>
+      <div className="cipher">
+        <textarea 
           rows="8"
           cols="70"
           type="text"
           value={encryptedMsg}
+          placeholder="Encrypted message"
           disabled
         />
-      )}
-    </div>
+        <textarea 
+          rows="8"
+          cols="70"
+          type="text"
+          value={decryptedMsg}
+          placeholder="Decrypted message"
+          disabled
+        />
+      </div>
+    </Fragment>
   );
 }
  

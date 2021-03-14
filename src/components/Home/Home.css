@@ -1,0 +1,25 @@
+.home {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  color: #333;
+}
+
+.home-title {
+  margin-top: 20px;
+  color: #333;
+  letter-spacing: 3px;
+}
+
+.home-title span {
+  color: #416651;
+}
+
+.description {
+  margin-top: 8px;
+}

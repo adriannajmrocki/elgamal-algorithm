@@ -1,6 +1,6 @@
 .header {
   background-color: #416651;
-  height: 160px;
+  height: 170px;
   padding: 50px 60px;
   color: #fff;
   border-radius: 8px;
@@ -17,4 +17,22 @@
 
 sub {
   color: #a3ffcc;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: none;
+  margin-top: 15px;
+  float: right;
+  font-size: 16px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: #a3ffcc;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transition: .4s;
 }
