@@ -44,7 +44,6 @@ export const ElGamal = (alpha, gen, C) => {
 
     v = 1;
     d = gen;
-    //t = 1;
     c = mod % gen;
     u = Math.floor(mod / gen);
 
@@ -97,11 +96,6 @@ export const ElGamal = (alpha, gen, C) => {
 
   const B = modPow(gen, C, p);
 
-  /**
-   * 
-   * @param {*} a modulo n
-   * @returns zdeszyfrowana wiadomosc
-   */
   const decrypt = (a) => {
     let d, x, y;
 
@@ -126,6 +120,12 @@ export const ElGamal = (alpha, gen, C) => {
     return a;
   };
 
+  /**
+   * 
+   * @param {*} message plain message
+   * @param {*} key public key
+   * @returns encrypted message
+   */
   const f = (message, key) => {
     let n, x, y;
 
@@ -144,6 +144,11 @@ export const ElGamal = (alpha, gen, C) => {
     return y;
   };
 
+  /**
+   * 
+   * @param {*} message encrypted message
+   * @returns decrypted message
+   */
   const g = (message) => {
     let n, m, d, x;
 

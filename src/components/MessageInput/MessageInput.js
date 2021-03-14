@@ -20,7 +20,7 @@ const MessageInput = ({ alphabet }) => {
   msgInput = encryption.encrypt(msgInput, decryption.pubKey);
 
   const encryptedMsg = msgInput;
-  const decryptedMsg = decryption.decrypt(msgInput);
+  const decryptedMsg = decryption.decrypt(encryptedMsg);
 
   return ( 
     <Fragment>
